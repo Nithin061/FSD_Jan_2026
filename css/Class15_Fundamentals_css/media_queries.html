@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        h1{
+            background-color: yellow;
+        }
+
+        @media(width: 400px){
+
+            h1{
+                background-color: red;
+                font-size: 10px;
+            }
+
+        }
+
+        @media(min-width: 300px) and (max-width: 700px) /* width >= 700 */
+        {
+            h1{
+                background-color: green;
+                font-size: 30px;
+            }            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>My Media Queries Demo</h1>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            background-color: aliceblue;
+            border: 2px solid black;
+        }
+        #box1{
+            transform: rotate(-45deg);
+        }
+        /* #box4{
+            transition: transform 2s ease;
+        } */
+         #box3{
+            transform: skew(-20deg);
+         }
+        #box4:hover{
+            transform: scaleX(2);
+        }
+
+        #myPic{
+            transform: translateX(50px);
+        }
+    </style>
+  </head>
+  <body>
+    <div id="box1">This is box1</div>
+    <div id="box2">This is box2</div>
+    <div id="box3">This is box3</div>
+    <div id="box4">This is box4</div>
+    <div id="myPic">This is my Pic</div>
+  </body>
+</html>

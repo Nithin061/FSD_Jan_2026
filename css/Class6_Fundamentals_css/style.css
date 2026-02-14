@@ -1,0 +1,107 @@
+* {
+    font-family: 'Courier New';
+}
+
+#login{
+    background-color: white;
+}
+
+
+.upvote {
+    background-color: green;
+}
+
+h1, h3{
+    color: #b92b27;
+}
+
+/* descendant selector */
+
+p a{
+    color: purple;
+    background-color: yellow;
+}
+
+.post a{
+    color: purple;
+    background-color: yellow;  
+}
+
+/* nav ul li a{
+    color: hotpink;
+} */
+
+p + h3 {
+    text-decoration: underline;
+}
+
+
+.upvote + button {
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+
+
+/* Immediate child Combinator */
+div > input {
+    background-color: darksalmon ;
+}
+
+/* Attribute selector */
+
+input[type="text"]{
+    color: red;
+}
+
+input[type="password"]
+{
+    color: green;
+}
+/* presence of the attribute */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors */
+input[type]
+{
+    background-color: ghostwhite;
+}
+
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/* clicked */
+button:active{
+    background-color: pink;
+    color: black;
+}
+
+p:active{
+    color: green;
+}
+
+ul li:nth-of-type(1)
+{
+    background-color: blanchedalmond;
+}
+
+
+.post:nth-of-type(1)
+{
+    background-color: blanchedalmond;
+}
+
+h1::first-letter{
+    color: black;
+}
+
+p::first-line {
+    color: purple;
+}
+
+p::selection{
+    background-color: yellow;
+}
+
+

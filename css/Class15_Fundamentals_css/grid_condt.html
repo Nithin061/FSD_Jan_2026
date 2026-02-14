@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .container{
+            margin: 0px;
+            height: 100vh;
+            background-color: aqua;
+            display: grid;
+            grid-template-rows: 40px 1fr  1fr 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "n n n n n"
+            "m m m m a"
+            "m m m m a"
+            "f f f f f"
+            ;
+        }
+
+        nav{
+            background-color: bisque;
+            color: white;
+            grid-area: n;           
+        }
+
+        footer{
+            background-color: blueviolet;
+            color: white;
+            grid-area: f;
+        }        
+
+        aside{
+            background-color: chartreuse;
+            grid-area: a;
+        }
+        
+        main{
+            background-color: chocolate;
+            grid-area: m;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>navbar</nav>
+        <main>
+            content
+        </main>
+        <aside>sidebar</aside>
+        <footer>
+            footer
+        </footer>
+    </div>
+</body>
+</html>
