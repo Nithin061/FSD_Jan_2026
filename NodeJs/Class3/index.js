@@ -16,11 +16,13 @@ app.get('/', (req, res)=>{
     let greet = "Hello How are you"
     res.render('home.ejs', {greet})
 })
-app.get("/instagram/:username/st", (req, res)=>{
+
+app.get("/instagram/:username", (req, res)=>{
     const username = req.params.username;
     let selectData = data[username]
     res.render('insta.ejs', {selectData})
 })
+
 app.listen(port, ()=>{
     console.log(`Server is unning on port ${port}`)
 })
